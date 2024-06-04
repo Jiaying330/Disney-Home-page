@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+.banner {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.3rem;
+  color: $color-white;
+  background-color: $color-dark-blue;
+}

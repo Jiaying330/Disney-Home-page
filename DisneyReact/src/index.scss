@@ -1,0 +1,55 @@
+$default-font-size: 1.4rem;
+
+$color-white: #dcdddd;
+$color-blue: #30a2e5;
+$color-dark-blue: #044553;
+$color-dark-grey: #1e1e1e;
+$color-medium-grey: #717171;
+$color-black: black;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10/16 = 62.5%
+
+  // @include respond(phone) {
+  //     font-size: 50%; // 1rem = 8px;
+  // };
+  //   @include respond(tab-land) {
+  //     font-size: 56.25%; // 1rem = 9px;
+  //   }
+
+  //   @include respond(tab-port) {
+  //     font-size: 50%; // 1rem = 8px;
+  //   }
+
+  //   @include respond(big-desktop) {
+  //     font-size: 75%; // 1rem = 12px;
+  //   }
+}
+
+body {
+  box-sizing: border-box;
+  //   padding: 3rem;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-dark-grey;
+
+  //   @include respond(tab-port) {
+  //     padding: 0;
+  //   }
+}
+
+// ::selection {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }

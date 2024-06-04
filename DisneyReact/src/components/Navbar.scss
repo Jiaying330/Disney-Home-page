@@ -1,0 +1,83 @@
+@import "../variables.scss";
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $color-dark-grey;
+}
+
+.navbar {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 2.4rem;
+
+  &__left {
+    font-size: 1.45rem;
+    font-weight: 600;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 48vw;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 3rem;
+
+    &--main {
+      width: 10rem;
+      & img {
+        padding-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  &__link {
+    &:hover:not(&--logo:hover, &--more:hover) {
+      color: $color-blue;
+    }
+  }
+
+  &__login {
+    margin-right: 2.5rem;
+    color: black;
+    font-weight: bolder;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-bar {
+    width: 25rem;
+    padding: 1.1rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: $color-light-grey;
+    border: 1px solid $color-medium-grey;
+    border-right: none;
+    color: $color-medium-grey;
+    z-index: 1;
+  }
+  &__search-button {
+    padding: 0.5rem 1rem;
+    background-color: $color-white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid $color-medium-grey;
+    border-left: none;
+  }
+}

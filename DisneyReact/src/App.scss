@@ -1,0 +1,98 @@
+// $default-font-size: 1.4rem;
+
+// $color-white: #dcdddd;
+// $color-blue: #30a2e5;
+// $color-dark-blue: #044553;
+// $color-dark-grey: #1e1e1e;
+// $color-medium-grey: #717171;
+// $color-black: black;
+@import "variables.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10/16 = 62.5%
+
+  // @include respond(phone) {
+  //     font-size: 50%; // 1rem = 8px;
+  // };
+  //   @include respond(tab-land) {
+  //     font-size: 56.25%; // 1rem = 9px;
+  //   }
+
+  //   @include respond(tab-port) {
+  //     font-size: 50%; // 1rem = 8px;
+  //   }
+
+  //   @include respond(big-desktop) {
+  //     font-size: 75%; // 1rem = 12px;
+  //   }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "REM", sans-serif;
+  font-weight: 700;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-dark-grey;
+  font-size: $default-font-size;
+
+  //   @include respond(tab-port) {
+  //     padding: 0;
+  //   }
+}
+
+// ::selection {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
