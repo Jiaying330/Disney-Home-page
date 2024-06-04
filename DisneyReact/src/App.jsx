@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
+import Explore from "./components/Explore";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Hero />
       <Products />
+      <Explore />
     </>
   );
 }

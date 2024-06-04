@@ -34,4 +34,28 @@ const section_1_data = [
   },
 ];
 
-export { section_1_data };
+const section_2_data = [
+  {
+    id: 5,
+    message: "New Doctor Who is now streaming on Disney+.",
+    action: "Stream Now",
+    img: "/product-poster-5.jpeg",
+  },
+
+  {
+    id: 6,
+    message: "It's Pride Month! Explore the Pride Collection on Disney+.",
+    action: "Stream Now",
+    img: "/product-poster-6.jpeg",
+  },
+
+  {
+    id: 7,
+    message:
+      "Everything new to Disney+ this week, plus a look ahead at what's to come.",
+    action: "Learn More",
+    img: "/product-poster-7.jpeg",
+  },
+];
+
+export { section_1_data, section_2_data };
