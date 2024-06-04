@@ -9,10 +9,7 @@ export default function Navbar() {
           <ul className="navbar__list">
             <li className="navbar__item navbar__item--main">
               <a href="#" className="navbar__link  navbar__link--logo">
-                <img
-                  alt="Disney"
-                  src="https://static-mh.content.disney.io/matterhorn/assets/goc/disney_logo_dark@2x-45d70f7dd57b.png"
-                />
+                <img alt="Disney" src="/disney_logo.svg" />
               </a>
             </li>
             <li className="navbar__item">
@@ -53,10 +50,7 @@ export default function Navbar() {
               placeholder="Search"
             />
             <button className="navbar__search-button">
-              <img
-                src="https://static-mh.content.disney.io/matterhorn/assets/goc/inc-search-input-icon-blue-331475a2cf98.svg"
-                alt="search-icon"
-              />
+              <img src="/search_logo.svg" alt="search-icon" />
             </button>
           </div>
         </div>

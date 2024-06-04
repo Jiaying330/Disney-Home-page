@@ -1,0 +1,20 @@
+@import "../variables.scss";
+
+.products {
+  width: 100vw;
+  height: 75vh;
+  background-color: $color-light-grey-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    margin: auto;
+    width: 88%;
+    height: 87%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+}

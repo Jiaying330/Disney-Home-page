@@ -5,16 +5,12 @@ export default function Hero() {
   return (
     <>
       <div className="hero">
-        <img
-          src="https://attractionsmagazine.com/wp-content/uploads/2024/03/Pixar-Fest-Inside-Out-Photo-courtesy-of-Disneyland-Resort.jpg"
-          alt="pixar-fest-img"
-          className="hero__img"
-        />
+        <img src="/hero-img.jpeg" alt="pixar-fest-img" className="hero__img" />
         <div className="hero__overlay">
           <div className="hero__descriptions-container">
             <div className="hero__descriptions">
               <img
-                src="https://lumiere-a.akamaihd.net/v1/images/hb_dlr_pixarfest2024_logo_3258_e75fc5ff.png?region=0,0,900,365"
+                src="/pixar-fest-poster.png"
                 alt="pixar-fest"
                 className="hero__descriptions-img"
               />
