@@ -2,8 +2,10 @@
 
 .explore {
   background-color: $color-dark-blue;
-  width: 100vw;
-  height: 38vw;
+  //   width: 100vw;
+  //   height: 38vw;
+  //   height: 65vh;
+  padding: 7rem auto;
   text-align: center;
 
   &__title {
@@ -18,9 +20,11 @@
     margin: auto;
     width: 88%;
     height: 60%;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 2rem;
   }
 }

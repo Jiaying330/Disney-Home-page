@@ -1,0 +1,24 @@
+@import "../variables.scss";
+.vacation {
+  padding-bottom: 3rem;
+  background-color: $color-light-grey-1;
+  text-align: center;
+  padding: 3rem;
+
+  &__title {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 3.5rem;
+    padding: 3rem;
+  }
+
+  //   & > * {
+  //     margin: auto;
+  //   }
+  &__container {
+    margin-inline: auto;
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+  }
+}

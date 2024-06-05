@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.slider {
+  width: 90%;
+  height: 80%;
+  position: relative;
+
+  &__button {
+    background-color: white;
+    opacity: 1;
+    border: none;
+    border-radius: 1000px;
+    padding: 1rem;
+    line-height: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    box-shadow: 0 2px 0.5rem rgba(black, 0.2);
+    z-index: 1;
+    &:hover {
+      opacity: 0.4;
+    }
+    &-left {
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    &-right {
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  &__items {
+    // background-color: saddlebrown;
+    display: flex;
+    gap: 2rem;
+  }
+}

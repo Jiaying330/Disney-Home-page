@@ -58,4 +58,80 @@ const section_2_data = [
   },
 ];
 
-export { section_1_data, section_2_data };
+const section_3_data = [
+  {
+    id: 8,
+    title: "The Acolyte",
+    status: "Streaming Now",
+    img: "/product-poster-8.jpg",
+  },
+
+  {
+    id: 9,
+    title: "Descendants: The Rise of Red",
+    status: "Coming Soon",
+    img: "/product-poster-9.jpeg",
+  },
+
+  {
+    id: 10,
+    title: "LEGO® Star Wars: Rebuild the Galaxy",
+    status: "Coming Soon",
+    img: "/product-poster-10.jpeg",
+  },
+
+  {
+    id: 11,
+    title: "Agatha All Along",
+    status: "Coming Soon",
+    img: "/product-poster-11.jpeg",
+  },
+
+  {
+    id: 12,
+    title: "Win or Lose",
+    status: "Coming Soon",
+    img: "/product-poster-12.jpg",
+  },
+
+  {
+    id: 13,
+    title: "Ironheart",
+    status: "Coming Soon",
+    img: "/product-poster-13.jpeg",
+  },
+
+  {
+    id: 14,
+    title: "Daredevil: Born Again",
+    status: "Coming Soon",
+    img: "/product-poster-14.jpg",
+  },
+
+  {
+    id: 15,
+    title: "Your Friendly Neighborhood Spider-man",
+    status: "Coming Soon",
+    img: "/product-poster-15.jpg",
+  },
+];
+
+const section_4_data = [
+  {
+    id: 16,
+    title: "Walt Disney Workd® Resort",
+    message: "Special 4-Day, 4-Park Magic Ticket",
+    action: "Learn More",
+    img: "/product-poster-16.jpeg",
+  },
+  {
+    id: 17,
+    title: "Disneyland® Resort",
+    message:
+      "Save up to 25% on select stays of 4 or more nights at a Disneyland® Resort hotel",
+    action: "Learn More",
+    img: "/product-poster-17.jpeg",
+  },
+];
+
+export { section_1_data, section_2_data, section_3_data, section_4_data };

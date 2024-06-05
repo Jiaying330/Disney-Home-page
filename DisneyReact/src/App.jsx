@@ -7,6 +7,8 @@ import Banner from "./components/Banner";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Explore from "./components/Explore";
+import ComingSoon from "./components/ComingSoon";
+import Vacation from "./components/Vacation";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Hero />
       <Products />
       <Explore />
+      <ComingSoon />
+      <Vacation />
     </>
   );
 }

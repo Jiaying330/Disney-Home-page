@@ -1,16 +1,14 @@
 @import "../variables.scss";
 
 .products {
-  width: 100vw;
-  height: 43vw;
+  padding: 4rem;
   background-color: $color-light-grey-1;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &__container {
-    width: 88%;
-    height: 87%;
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;

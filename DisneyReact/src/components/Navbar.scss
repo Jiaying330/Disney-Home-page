@@ -32,7 +32,7 @@ a:visited {
     width: 48vw;
   }
   &__item {
-    display: inline-block;
+    flex-shrink: 0;
     margin-right: 3rem;
 
     &--main {
