@@ -1,0 +1,50 @@
+.bundle-ad {
+  background-color: #020c41;
+  text-align: center;
+  color: white;
+  padding: 10rem 3rem;
+  background-image: linear-gradient(to bottom right, #0070fd, #020c41);
+
+  &__logo {
+    margin: auto;
+    width: 30%;
+
+    & > img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__descriptions {
+    margin: auto;
+    width: 40%;
+    & span {
+      font-size: 1.1rem;
+    }
+  }
+  &__button:link,
+  &__button:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0319e4;
+
+    margin-top: 1rem;
+    padding: 1rem 7rem;
+    border-radius: 1000px;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #0116d3;
+    }
+  }
+}
+
+.terms {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem 20rem;
+  & a {
+    text-decoration: underline;
+  }
+}

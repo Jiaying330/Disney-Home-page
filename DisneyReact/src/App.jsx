@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import Explore from "./components/Explore";
 import ComingSoon from "./components/ComingSoon";
 import Vacation from "./components/Vacation";
+import BundleAd from "./components/BundleAd";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Explore />
       <ComingSoon />
       <Vacation />
+      <BundleAd />
     </>
   );
 }

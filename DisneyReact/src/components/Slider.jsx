@@ -51,7 +51,7 @@ export default function Slider(props) {
   return (
     <>
       <div className="slider">
-        <div className="slider__controller">
+        {/* <div className="slider__controller">
           <button
             className="slider__button slider__button-left"
             onClick={leftOnClick}
@@ -70,7 +70,7 @@ export default function Slider(props) {
               className="slider__icon-right"
             />
           </button>
-        </div>
+        </div> */}
         <div className="slider__wrapper">
           <div className="slider__items">
             {data.map((item) => {

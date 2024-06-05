@@ -4,7 +4,7 @@ import "./Hero.scss";
 export default function Hero() {
   return (
     <>
-      <div className="hero">
+      <section className="hero">
         <img src="/hero-img.jpeg" alt="pixar-fest-img" className="hero__img" />
         <div className="hero__overlay">
           <div className="hero__descriptions-container">
@@ -24,7 +24,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
