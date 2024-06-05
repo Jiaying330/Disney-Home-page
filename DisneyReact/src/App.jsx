@@ -10,6 +10,7 @@ import Explore from "./components/Explore";
 import ComingSoon from "./components/ComingSoon";
 import Vacation from "./components/Vacation";
 import BundleAd from "./components/BundleAd";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <ComingSoon />
       <Vacation />
       <BundleAd />
+      <Footer />
     </>
   );
 }
