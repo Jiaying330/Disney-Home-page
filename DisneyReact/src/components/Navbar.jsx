@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
+import NavDropdown from "./NavDropdown";
 
 export default function Navbar() {
   return (
@@ -16,26 +17,54 @@ export default function Navbar() {
               <a href="#" className="navbar__link">
                 Disney+
               </a>
+              <NavDropdown items={["On Disney+", "The Disney Bundle"]} />
             </li>
             <li className="navbar__item">
               <a href="#" className="navbar__link">
                 Parks{" & "}Travel
               </a>
+              <NavDropdown
+                items={[
+                  "Walt Disney World Resort",
+                  "Disneyland Resort",
+                  "Disney Cruise Line",
+                  "Auani - A Disney Resort and Spa",
+                  "Disney Vacation Club",
+                ]}
+              />
             </li>
             <li className="navbar__item">
               <a href="#" className="navbar__link">
                 Movies
               </a>
+              <NavDropdown
+                items={[
+                  "All Movies",
+                  "Movies Anywhere",
+                  "20th Century Studios",
+                ]}
+              />
             </li>
             <li className="navbar__item">
               <a href="#" className="navbar__link">
                 Shop
               </a>
+              <NavDropdown
+                items={["Sale", "Clothes", "Accessories", "Toys", "Shop All"]}
+              />
             </li>
             <li className="navbar__item">
               <a href="#" className="navbar__link navbar__link--more">
                 More
               </a>
+              <NavDropdown
+                items={[
+                  "Disney News",
+                  "D23: The Official Disney Fan Club",
+                  "Live Shows",
+                  "Music",
+                ]}
+              />
             </li>
           </ul>
         </div>

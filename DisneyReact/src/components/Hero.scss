@@ -57,9 +57,19 @@
     border-radius: 1000px;
     font-size: 1.6rem;
     font-weight: 500;
+    transition: all 0.2s;
+    // box-shadow: 0 2px 5px rgba(black, 0.4);
+    // position: relative;
 
     &:hover {
-      background-color: #ece0a8;
+      // background-color: #ece0a8;
+      transform: translateY(-0.4rem);
+      box-shadow: 0 1rem 2rem rgba(black, 0.3);
+    }
+    &:active,
+    &:focus {
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 1rem rgba(black, 20%);
     }
   }
 }

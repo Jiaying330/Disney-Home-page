@@ -4,14 +4,13 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: $color-dark-grey;
+  color: #1e1e1e;
 }
 
 .navbar {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 2.4rem;
 
   &__left {
     font-size: 1.45rem;
@@ -33,21 +32,59 @@ a:visited {
   }
   &__item {
     flex-shrink: 0;
-    margin-right: 3rem;
+    position: relative;
+    margin: 0;
+
+    &:hover:not(&--main) &-dropdown {
+      opacity: 1;
+    }
+
+    &:hover .navbar__link:not(.navbar__link--logo, .navbar__link--more) {
+      color: #30a2e5;
+    }
+
+    &-dropdown {
+      position: absolute;
+      background-color: #242b2d;
+      padding: 2.5rem;
+      visibility: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+      z-index: 1;
+
+      &-list {
+        list-style-type: none;
+        gap: 1rem;
+        width: auto;
+        position: relative;
+      }
+
+      &-link,
+      &-link:link,
+      &-link:visited {
+        white-space: nowrap;
+        color: white;
+        text-transform: capitalize;
+        line-height: 4rem;
+      }
+      &-link:hover {
+        color: #30a2e5;
+      }
+    }
 
     &--main {
       width: 10rem;
+      padding: 0rem;
+      margin-left: 2rem;
       & img {
         padding-top: 1rem;
         width: 100%;
       }
     }
   }
-
-  &__link {
-    &:hover:not(&--logo:hover, &--more:hover) {
-      color: $color-blue;
-    }
+  &__link:not(&__link--logo) {
+    display: inline-block;
+    padding: 1.8rem 2.4rem;
   }
 
   &__login {
