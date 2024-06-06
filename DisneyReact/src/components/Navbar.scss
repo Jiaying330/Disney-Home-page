@@ -39,10 +39,8 @@ a:visited {
       position: absolute;
       background-color: #242b2d;
       padding: 2.5rem;
-      visibility: none;
-      opacity: 0;
-      transition: opacity 0.4s;
       z-index: 1;
+      display: none;
 
       &-list {
         list-style-type: none;
@@ -79,9 +77,13 @@ a:visited {
     padding: 1.8rem 2.4rem;
 
     &:hover + .navbar__item-dropdown {
-      opacity: 1;
+      display: block;
     }
   }
+  &__item-dropdown:hover {
+    display: block;
+  }
+
   &__link:hover:not(&__link--logo) {
     color: #30a2e5;
   }
