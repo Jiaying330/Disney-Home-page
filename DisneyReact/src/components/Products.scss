@@ -15,3 +15,21 @@
     gap: 2rem;
   }
 }
+
+@media (max-width: 1000px) {
+  .products {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .products {
+    padding: 2rem;
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

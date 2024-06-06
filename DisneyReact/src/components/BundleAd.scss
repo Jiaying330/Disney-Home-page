@@ -101,3 +101,36 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .bundle-ad {
+    padding: 4rem 3rem;
+
+    &__logo {
+      width: 60%;
+    }
+
+    &__descriptions {
+      width: 80%;
+    }
+  }
+  .terms {
+    padding: 2rem 5rem;
+  }
+  .card-ad {
+    // background-color: violet;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+
+    &__logo {
+      text-align: center;
+      width: 90%;
+      // background-color: white;
+    }
+    &__descriptions {
+      width: 80%;
+    }
+  }
+}

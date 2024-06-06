@@ -1,10 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
+import NavbarSmall from "./NavbarSmall";
 import NavDropdown from "./NavDropdown";
 
 export default function Navbar() {
+  const [width, setWidth] = useState(window.innerWidth);
+  // console.log(width);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  if (width <= 1100) {
+    return <NavbarSmall />;
+  }
   return (
     <>
+      {/* <div className="navbar-small">
+        <ul className="navbar-small__list">
+          <li className="navbar-small__item"></li>
+          <li className="navbar-small__item">
+            <a href="#" className="navbar__link  navbar__link--logo">
+              <img alt="Disney" src="/disney_logo.svg" />
+            </a>
+          </li>
+        </ul>
+      </div> */}
       <nav className="navbar">
         <div className="navbar__left">
           <ul className="navbar__list">
