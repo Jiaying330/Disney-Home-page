@@ -35,14 +35,6 @@ a:visited {
     position: relative;
     margin: 0;
 
-    &:hover:not(&--main) &-dropdown {
-      opacity: 1;
-    }
-
-    &:hover .navbar__link:not(.navbar__link--logo, .navbar__link--more) {
-      color: #30a2e5;
-    }
-
     &-dropdown {
       position: absolute;
       background-color: #242b2d;
@@ -85,6 +77,13 @@ a:visited {
   &__link:not(&__link--logo) {
     display: inline-block;
     padding: 1.8rem 2.4rem;
+
+    &:hover + .navbar__item-dropdown {
+      opacity: 1;
+    }
+  }
+  &__link:hover:not(&__link--logo) {
+    color: #30a2e5;
   }
 
   &__login {
