@@ -12,8 +12,10 @@ export default function NavbarSmall() {
     let nav = document.querySelector(".navbar-small");
     if (change) {
       nav.style.position = "fixed";
+      nav.style.height = "100vh";
     } else {
       nav.style.position = "relative";
+      nav.style.height = "auto";
     }
   }
 
