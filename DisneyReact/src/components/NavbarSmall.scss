@@ -1,15 +1,14 @@
 .navbar-small {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   padding-inline: 2rem;
+  background-color: white;
   padding: 0.5rem 2rem;
   width: 100%;
+  position: relative;
+  z-index: 10;
   &__list {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // width: 100vw;
   }
   &__item {
     &--main {
@@ -23,5 +22,91 @@
   &__search-button {
     background-color: transparent;
     border: none;
+    width: 6rem;
+    height: 100%;
+  }
+
+  &__checkbox {
+    visibility: hidden;
+  }
+
+  &__button {
+    width: 6rem;
+  }
+
+  &__icon {
+    width: 100%;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      width: 2rem;
+      height: 2px;
+      background-color: rgb(37, 37, 37);
+      content: "";
+      display: inline-block;
+      left: 0;
+      transition: all 0.5s;
+    }
+    &::before {
+      bottom: 1rem;
+    }
+    &::after {
+      bottom: 0rem;
+    }
+  }
+  &__checkbox:checked + &__button &__icon {
+    &::before {
+      bottom: 0.5rem;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0.5rem;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__contents {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: scroll;
+    &-list {
+      list-style-type: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid black;
+    }
+    &-item {
+      font-size: 1.45rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      width: 100%;
+      padding: 1.5rem 3rem;
+      border-bottom: 0.5px solid grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__search-bar {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 2rem;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a {
+      border: none;
+    }
   }
 }

@@ -5,7 +5,6 @@ import NavDropdown from "./NavDropdown";
 
 export default function Navbar() {
   const [width, setWidth] = useState(window.innerWidth);
-  // console.log(width);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,16 +23,6 @@ export default function Navbar() {
   }
   return (
     <>
-      {/* <div className="navbar-small">
-        <ul className="navbar-small__list">
-          <li className="navbar-small__item"></li>
-          <li className="navbar-small__item">
-            <a href="#" className="navbar__link  navbar__link--logo">
-              <img alt="Disney" src="/disney_logo.svg" />
-            </a>
-          </li>
-        </ul>
-      </div> */}
       <nav className="navbar">
         <div className="navbar__left">
           <ul className="navbar__list">

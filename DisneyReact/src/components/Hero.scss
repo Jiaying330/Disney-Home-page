@@ -76,11 +76,6 @@
 
 @media (max-width: 930px) {
   .hero {
-    // width: 100vw;
-    // position: relative;
-    // color: red;
-    // display: flex;
-    // flex-direction: column;
     height: 100vh;
 
     &__img {
@@ -88,11 +83,7 @@
       width: 100vw;
       top: -10rem;
       left: 0;
-      // right: unset;
-      // object-fit: cover;
-      transform: translateY(-5rem);
-      // position: absolute;
-      // top: 0;
+      transform: translateY(-3rem);
     }
 
     &:hover > &__img {
@@ -106,12 +97,9 @@
       width: 100%;
       bottom: 0;
       clip-path: none;
-      // clip-path: polygon(0 0, 48% 0, 55% 100%, 0 100%);
     }
     &__descriptions-container {
       margin: auto;
-      // flex-direction: row;
-      // height: 40%;
       width: 80%;
     }
 

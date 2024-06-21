@@ -1,0 +1,11 @@
+.navbar-small {
+  &__dropdown {
+    width: 100%;
+    list-style-type: none;
+    &-item {
+      background-color: rgba(238, 238, 238, 0.726);
+      padding: 1.5rem 1rem;
+      border-bottom: 0.5px solid grey;
+    }
+  }
+}
