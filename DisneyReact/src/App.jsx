@@ -11,13 +11,11 @@ import ComingSoon from "./components/ComingSoon";
 import Vacation from "./components/Vacation";
 import BundleAd from "./components/BundleAd";
 import Footer from "./components/Footer";
-import NavbarSmall from "./components/NavbarSmall";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <NavbarSmall /> */}
       <Banner />
       <Hero />
       <Products />
